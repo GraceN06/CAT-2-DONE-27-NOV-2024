@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Weather Application</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #e5e5e6;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                background-color: #adacac;
+                border-radius: 10px;
+                width: 50%;
+                margin: 50px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+            h1{
+                color: #665814;
+            }
+            input[type="text"]{
+                padding: 10px;
+                width: 70%;
+                margin: 20px;
+                border-radius: 5px;
+                border: 1px solid #b6b3b3;
+            }
+            button{
+                padding: 10px 20px;
+                background-color: #8a33af;
+                color: #f0eded;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+            }
+            .weather-info{
+                margin: 20px;
+                font-size: 18px;
+            }
+            .forecast{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to our Weather Application</h1>
+            <input type="text" placeholder="Enter City Name">
+            <button>Search</button>
+            <div class="weather info">
+                <h2>Paris</h2>
+                <p>Tuesday 14:40, scattered clouds</p>
+                <p>Humidity:66%, Wind Speed:4.3</p>
+                <h2>12`C</h2>
+            </div>
+
+            <div class="forecast">
+                <div class="day">
+                    <p>Mon</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Tue</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Wed</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Thur</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Fri</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Sat</p>
+                    <p>15`C   19`C</p>
+                </div>
+                <div class="day">
+                    <p>Sun</p>
+                    <p>15`C   19`C</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
