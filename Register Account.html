@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Register Account</title>
+
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f3f3f3;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .form-container{
+                width: 500px;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px rgba(0,0,0,0.1);
+            }
+            h1{
+                text-align: center;
+                color: #e67e22;
+                margin-bottom: 20px;
+            }
+            .form-group label{
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .form-group input{
+                width: calc(100%-10px);
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .form-group.error{
+                color: red;
+                font-size: 12px;
+            }
+            .button-container{
+                text-align: center;
+                margin-top: 20px;
+            }
+            .button-container button{
+                padding: 10px 20px;
+                margin: 0 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .button-container button[type="submit"]{
+                background-color: #e74c3c;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>Register Account</h1>
+
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Full name:</label>
+                    <input type="text" id="Full name" placeholder="Enter Full name" required>
+                    <p class="error">user name must be at least 4 characters</p>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <p class="error">Password must be atleast 4 characters</p>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                    <p class="error">Password do not match</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                    <p class="error">Invalid email format</p>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number"> Phone Number:</label>
+                    <input type="text" id="phone-number" placeholder="format:XXX-XXX-XXXX" required>
+                    <p class="error">Invalid Phone Number</p>
+                </div>
+                <div class="form-group">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="zip-code" placeholder="Enter zip code" required>
+                    <p class="error">Invalid Zip Code</p>
+                </div>
+                <div class="form-group">
+                    <label for="card-type">Card Type:</label>
+                    <select id="card-type" required>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="card=number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="1111-2222-3333-4444" required>
+                    <p class="error">Invalid card number format</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiration date">Expiration date:</label>
+                        <input type="date" id="expiration-date" placeholder="Enter zip code" required>
+                        <p class="error">Invalid date format</p>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">Register</button>
+                            <button type="reset">Clear Form</button>
+                        </div>
+            </form>
+        </div>
+    </body>
+</html>
